@@ -1,4 +1,4 @@
-FROM quay.io/openshift/origin-release:v4.0-openshift-golang-builder as builder
+FROM quay.io/projectquay/golang:1.26 as builder
 
 WORKDIR /build
 ADD . /build/
